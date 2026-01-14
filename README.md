@@ -1,7 +1,8 @@
 <p align="center">
-  <img src="static/logo.svg" width="120" alt="Gemini Business2API logo" />
+  <img src="docs/logo.svg" width="120" alt="Gemini Business2API logo" />
 </p>
 <h1 align="center">Gemini Business2API</h1>
+<p align="center">赋予硅基生物以灵魂</p>
 <p align="center">当时明月在 · 曾照彩云归</p>
 <p align="center">
   <strong>简体中文</strong> | <a href="docs/README_EN.md">English</a>

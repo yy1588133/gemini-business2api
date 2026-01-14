@@ -1,7 +1,8 @@
 <p align="center">
-  <img src="../static/logo.svg" width="120" alt="Gemini Business2API logo" />
+  <img src="../docs/logo.svg" width="120" alt="Gemini Business2API logo" />
 </p>
 <h1 align="center">Gemini Business2API</h1>
+<p align="center">Endow silicon-based beings with souls</p>
 <p align="center">When the bright moon was there · It once shone on the colorful clouds returning</p>
 <p align="center">
   <a href="../README.md">简体中文</a> | <strong>English</strong>
@@ -37,13 +38,13 @@
 
 ## 🤖 Model Capabilities
 
-| Model ID                 | Vision | Image Gen    | Native Web | File Multimodal |
-| ------------------------ | ------ | ------------ | ---------- | --------------- |
-| `gemini-auto`            | ✅      | Optional     | ✅          | ✅               |
-| `gemini-2.5-flash`       | ✅      | Optional     | ✅          | ✅               |
-| `gemini-2.5-pro`         | ✅      | Optional     | ✅          | ✅               |
-| `gemini-3-flash-preview` | ✅      | Optional     | ✅          | ✅               |
-| `gemini-3-pro-preview`   | ✅      | Optional     | ✅          | ✅               |
+| Model ID                 | Vision | Image Gen | Native Web | File Multimodal |
+| ------------------------ | ------ | --------- | ---------- | --------------- |
+| `gemini-auto`            | ✅      | Optional  | ✅          | ✅               |
+| `gemini-2.5-flash`       | ✅      | Optional  | ✅          | ✅               |
+| `gemini-2.5-pro`         | ✅      | Optional  | ✅          | ✅               |
+| `gemini-3-flash-preview` | ✅      | Optional  | ✅          | ✅               |
+| `gemini-3-pro-preview`   | ✅      | Optional  | ✅          | ✅               |
 
 ## 🚀 Quick Start
 
