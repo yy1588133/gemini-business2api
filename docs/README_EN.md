@@ -73,6 +73,14 @@ docker run -d -p 7860:7860 \
   gemini-business2api
 ```
 
+Or use `docker compose` (recommended):
+
+```bash
+cp .env.example .env
+# Edit .env to set ADMIN_KEY
+docker compose up -d --build
+```
+
 ### Optional: Database Persistence (Local / HF Spaces)
 
 - Recommended on HF Spaces (free tier) to avoid data loss after restart
@@ -95,7 +103,7 @@ docker run -d -p 7860:7860 \
 ### Access
 
 - Admin Panel: `http://localhost:7860/` (Login with `ADMIN_KEY`)
-- OpenAI-compatible API: `http://localhost:7860/v1/chat/completions`
+- OpenAI-compatible API: `http://localhost:7860/v1/chat/completions`      
 
 ### Configuration Tips
 

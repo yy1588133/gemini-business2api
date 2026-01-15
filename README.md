@@ -73,6 +73,14 @@ docker run -d -p 7860:7860 \
   gemini-business2api
 ```
 
+或使用 `docker compose`（推荐）：
+
+```bash
+cp .env.example .env
+# 编辑 .env 设置 ADMIN_KEY
+docker compose up -d --build
+```
+
 ### 数据库持久化（可选）
 
 - HF Spaces 环境建议开启，否则重启会丢数据
@@ -149,6 +157,3 @@ docker run -d -p 7860:7860 \
 [![Star History Chart](https://api.star-history.com/svg?repos=Dreamy-rain/gemini-business2api&type=date&legend=top-left)](https://www.star-history.com/#Dreamy-rain/gemini-business2api&type=date&legend=top-left)
 
 **如果这个项目对你有帮助，请给个 ⭐ Star!**
-
-
-

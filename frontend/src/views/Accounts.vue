@@ -421,6 +421,12 @@
         <div v-if="configError" class="mt-4 rounded-2xl bg-destructive/10 px-4 py-3 text-sm text-destructive">
           {{ configError }}
         </div>
+        <div
+          v-else-if="configMasked"
+          class="mt-4 rounded-2xl bg-secondary/60 px-4 py-3 text-xs text-muted-foreground"
+        >
+          当前为脱敏预览模式（只读），点击“显示原文”后可编辑并保存。
+        </div>
 
         <div class="mt-4">
           <textarea
@@ -667,9 +673,13 @@ const openConfigPanel = async () => {
   configError.value = ''
   try {
     const response = await accountsApi.getConfig()
-    configData.value = Array.isArray(response.accounts) ? response.accounts : []
-    configJson.value = JSON.stringify(maskConfig(configData.value), null, 2)
-    configMasked.value = true
+    const accounts = Array.isArray(response.accounts) ? response.accounts : []
+    configData.value = accounts
+
+    // 没有任何账户配置时，不存在敏感信息，默认允许直接编辑以便首次添加账号。
+    const shouldMask = accounts.length > 0
+    configMasked.value = shouldMask
+    configJson.value = JSON.stringify(shouldMask ? maskConfig(accounts) : accounts, null, 2)
     isConfigOpen.value = true
   } catch (error: any) {
     configError.value = error.message || '加载账号配置失败'
